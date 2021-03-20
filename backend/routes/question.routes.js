@@ -8,6 +8,10 @@ module.exports = app => {
   
     // Retrieve one question
     router.get("/question", questions.getQuestion);
+
+
+    // Validate one question
+    router.get("/validate", questions.validateQuestion);
   
     // // Retrieve all published questions
     // router.get("/published", questions.findAllPublished);

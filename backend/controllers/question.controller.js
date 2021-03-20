@@ -67,25 +67,29 @@ exports.getQuestion = (req, res) => {
 
 };
 
+// must querystring _id of answer
 exports.validateQuestion = (req, res) => {
-    const id = req.params.id;
-    const answer = req.params.answer;
+    
+    const answer = req.query.answer;
 
     //should find by id, compare with option value and return
 
-    Question.findById(id)
+    Question.find({"options._id": answer})
       .then(data => {
         if (!data)
           res.status(404).send({ message: "Not found Question with id " + id });
         else {
-            // TODO:: get the answer from the array and return isCorrect            
-            res.send(data);
+            // TODO:: get the answer from the array and return isCorrect     
+            console.log(data[0]);
+            let found_answer = data[0].options.find(a => a._id = answer);
+            console.log(found_answer.isCorrect);
+            res.send(found_answer.isCorrect);
         }
       })
       .catch(err => {
         res
           .status(500)
-          .send({ message: "Error retrieving Question with id=" + id });
+          .send({ message: "Error retrieving Question with id=" + answer });
       });
 }
 
