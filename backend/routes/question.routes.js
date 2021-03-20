@@ -7,22 +7,22 @@ module.exports = app => {
     //router.post("/", questions.create);
   
     // Retrieve one question
-    router.getQuestion("/", questions.findAll);
+    router.get("/question", questions.getQuestion);
   
-    // Retrieve all published questions
-    router.get("/published", questions.findAllPublished);
+    // // Retrieve all published questions
+    // router.get("/published", questions.findAllPublished);
   
-    // Retrieve a single Tutorial with id
-    router.get("/:id", questions.findOne);
+    // // Retrieve a single Tutorial with id
+    // router.get("/:id", questions.findOne);
   
-    // Update a Tutorial with id
-    router.put("/:id", questions.update);
+    // // Update a Tutorial with id
+    // router.put("/:id", questions.update);
   
-    // Delete a Tutorial with id
-    router.delete("/:id", questions.delete);
+    // // Delete a Tutorial with id
+    // router.delete("/:id", questions.delete);
   
-    // Create a new Tutorial
-    router.delete("/", questions.deleteAll);
+    // // Create a new Tutorial
+    // router.delete("/", questions.deleteAll);
   
     app.use('/api/questions', router);
   };

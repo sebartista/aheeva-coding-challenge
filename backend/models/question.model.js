@@ -3,10 +3,10 @@ module.exports = (mongoose) => {
       {
         id: String,
         question: String,
-        options: Array[{
+        options: [{
             label: String,
             value: String,
-            isCorrect: boolean
+            isCorrect: Boolean
         }]        
       },
       { timestamps: true }

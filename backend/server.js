@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-const db = require("./app/models");
+const db = require("./models");
 db.mongoose
   .connect(db.url, {
     useNewUrlParser: true,
@@ -31,13 +31,30 @@ db.mongoose
     process.exit();
   });
 
+//should empty the database and reload everything.
+// async function mySeeder() {
+//   const data = await MyModel.find({}).limit(1).exec();
+//   if (data.length !== 0) {
+//       // Data exists, no need to seed.
+//       console.log("data exists, continue");
+//       return;
+//   }
+//   //const seed = new MyModel({...});
+
+//   // some other seed logic
+//   // ...
+
+//   //await seed.save();
+// }
+
+// mySeeder();
 // simple route
 app.get("/", (req, res) => {
   res.json({ message: "We are at home." });
 });
 
 
-require("./app/routes/callcenter.routes")(app);
+require("./routes/question.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8180;
