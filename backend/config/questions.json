@@ -16,7 +16,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "In the movie &ldquo;The Iron Giant,&rdquo; this character is the protagonist.",
+      "question": "In the movie “The Iron Giant,” this character is the protagonist.",
       "correct_answer": "Hogarth Hughes",
       "incorrect_answers": [
         "Kent Mansley",
@@ -40,7 +40,7 @@
       "category": "Entertainment: Music",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which Canadian reggae musician had a 1993 hit with the song &#039;Informer&#039;?",
+      "question": "Which Canadian reggae musician had a 1993 hit with the song 'Informer'?",
       "correct_answer": "Snow",
       "incorrect_answers": [
         "Rain",
@@ -52,7 +52,7 @@
       "category": "Science: Computers",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Which internet company began life as an online bookstore called &#039;Cadabra&#039;?",
+      "question": "Which internet company began life as an online bookstore called 'Cadabra'?",
       "correct_answer": "Amazon",
       "incorrect_answers": [
         "eBay",
@@ -64,11 +64,11 @@
       "category": "Entertainment: Books",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which of the following is the world&#039;s best-selling book?",
+      "question": "Which of the following is the world's best-selling book?",
       "correct_answer": "The Lord of the Rings",
       "incorrect_answers": [
         "The Little Prince",
-        "Harry Potter and the Philosopher&#039;s Stone",
+        "Harry Potter and the Philosopher's Stone",
         "The Da Vinci Code"
       ]
     },
@@ -88,7 +88,7 @@
       "category": "Entertainment: Music",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Whose signature guitar technique is called the &quot;windmill&quot;?",
+      "question": "Whose signature guitar technique is called the windmill?",
       "correct_answer": "Pete Townshend",
       "incorrect_answers": [
         "Jimmy Page",
@@ -136,17 +136,19 @@
       "category": "Entertainment: Film",
       "type": "boolean",
       "difficulty": "easy",
-      "question": "The 2010 film &quot;The Social Network&quot; is a biographical drama film about MySpace founder Tom Anderson.",
+      "question": "The 2010 film The Social Network is a biographical drama film about MySpace founder Tom Anderson.",
       "correct_answer": "False",
       "incorrect_answers": [
-        "True"
+        "True",
+        "Is a book",
+        "The movie never existed"
       ]
     },
     {
       "category": "Geography",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "The derisive acronym &quot;PIIGS&quot; refers to which of the following European countries and their economic statuses?",
+      "question": "The derisive acronym PIIGS refers to which of the following European countries and their economic statuses?",
       "correct_answer": "Portugal, Ireland, Italy, Greece, Spain",
       "incorrect_answers": [
         "Poland, Iceland, Italy, Greece, Serbia",
@@ -161,7 +163,9 @@
       "question": "The proof for the Chinese Remainder Theorem used in Number Theory was NOT developed by its first publisher, Sun Tzu.",
       "correct_answer": "True",
       "incorrect_answers": [
-        "False"
+        "False",
+        "The theorem was not chinese",
+        "It never existed"
       ]
     },
     {
@@ -180,7 +184,7 @@
       "category": "Science & Nature",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Where did the dog breed &quot;Chihuahua&quot; originate?",
+      "question": "Where did the dog breed Chihuahua originate?",
       "correct_answer": "Mexico",
       "incorrect_answers": [
         "France",
@@ -193,7 +197,7 @@
       "type": "multiple",
       "difficulty": "easy",
       "question": "Who is the chemical element Curium named after?",
-      "correct_answer": "Marie &amp; Pierre Curie",
+      "correct_answer": "Marie & Pierre Curie",
       "incorrect_answers": [
         "The Curiosity Rover",
         "Curious George",
@@ -204,7 +208,7 @@
       "category": "Entertainment: Music",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Which artist collaborated with American DJ Dillon Francis to release the song 2016 &quot;Need You&quot;?",
+      "question": "Which artist collaborated with American DJ Dillon Francis to release the song 2016 Need You?",
       "correct_answer": "NGHTMRE",
       "incorrect_answers": [
         "LOUDPVCK",
@@ -228,7 +232,7 @@
       "category": "Entertainment: Video Games",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What year did the game &quot;Overwatch&quot; enter closed beta?",
+      "question": "What year did the game Overwatch enter closed beta?",
       "correct_answer": "2015",
       "incorrect_answers": [
         "2013",
@@ -240,7 +244,7 @@
       "category": "Mythology",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Which of these Roman gods doesn&#039;t have a counterpart in Greek mythology?",
+      "question": "Which of these Roman gods doesn't have a counterpart in Greek mythology?",
       "correct_answer": "Janus",
       "incorrect_answers": [
         "Vulcan",
@@ -276,7 +280,7 @@
       "category": "Entertainment: Video Games",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "In Monster Hunter Generations, which of the following monsters are a part of the &quot;Fated Four&quot;?",
+      "question": "In Monster Hunter Generations, which of the following monsters are a part of the Fated Four?",
       "correct_answer": "Astalos",
       "incorrect_answers": [
         "Gore Magala",
@@ -300,7 +304,7 @@
       "category": "Entertainment: Video Games",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which water-type Pok&eacute;mon starter was introduced in the 4th generation of the series?",
+      "question": "Which water-type Pokémon starter was introduced in the 4th generation of the series?",
       "correct_answer": "Piplup",
       "incorrect_answers": [
         "Totodile",
@@ -312,7 +316,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "According to Sherlock Holmes, &quot;If you eliminate the impossible, whatever remains, however improbable, must be the...&quot;",
+      "question": "According to Sherlock Holmes, If you eliminate the impossible, whatever remains, however improbable, must be the...",
       "correct_answer": "Truth",
       "incorrect_answers": [
         "Answer",
@@ -336,7 +340,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Who voiced Metalbeard in &quot;The Lego Movie&quot;?",
+      "question": "Who voiced Metalbeard in The Lego Movie?",
       "correct_answer": "Nick Offerman",
       "incorrect_answers": [
         "Liam Neeson",
@@ -408,11 +412,11 @@
       "category": "Entertainment: Video Games",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "In &quot;Paper Mario: The Thousand Year Door&quot;, what is Hooktail&#039;s weakness?",
+      "question": "In Paper Mario: The Thousand Year Door, what is Hooktail's weakness?",
       "correct_answer": "The Sound of Crickets",
       "incorrect_answers": [
         "Attacks from Koopas",
-        "The &quot;Ice Storm&quot; Item",
+        "The Ice Storm Item",
         "The Hammer"
       ]
     },
@@ -420,7 +424,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "In what year does Jurassic World open in the &quot;Jurassic Park&quot; universe?",
+      "question": "In what year does Jurassic World open in the Jurassic Park universe?",
       "correct_answer": "2005",
       "incorrect_answers": [
         "2007",
@@ -435,7 +439,9 @@
       "question": "Scotland voted to become an independent country during the referendum from September 2014.",
       "correct_answer": "False",
       "incorrect_answers": [
-        "True"
+        "True",
+        "Scotland never voted",
+        "Scotland does not exists"
       ]
     },
     {
@@ -466,7 +472,7 @@
       "category": "Entertainment: Comics",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "In Calvin and Hobbes, what is the name of the babysitter&#039;s boyfriend?",
+      "question": "In Calvin and Hobbes, what is the name of the babysitter's boyfriend?",
       "correct_answer": "Charlie",
       "incorrect_answers": [
         "Dave",
@@ -478,10 +484,12 @@
       "category": "Entertainment: Film",
       "type": "boolean",
       "difficulty": "easy",
-      "question": "&quot;Foodfight!&quot; earned less than $80,000 at box office.",
+      "question": "Foodfight! earned less than $80,000 at box office.",
       "correct_answer": "True",
       "incorrect_answers": [
-        "False"
+        "False",
+        "There is no FoodFight!",
+        "Never fight with food"
       ]
     },
     {
@@ -503,7 +511,9 @@
       "question": "A plant that has a life cycle for more than a year is known as an annual.",
       "correct_answer": "False",
       "incorrect_answers": [
-        "True"
+        "True",
+        "No plant last over a year",
+        "No plant last less than year"
       ]
     },
     {
@@ -525,24 +535,28 @@
       "question": "The most frequent subconscious activity repeated by the human body is blinking.",
       "correct_answer": "False",
       "incorrect_answers": [
-        "True"
+        "True",
+        "What?",
+        "Blinking its not a thing"
       ]
     },
     {
       "category": "Entertainment: Music",
       "type": "boolean",
       "difficulty": "medium",
-      "question": "Metallica collaborated with Rowan Atkinson&#039;s Mr Bean on a 1992 comic relief single.",
+      "question": "Metallica collaborated with Rowan Atkinson's Mr Bean on a 1992 comic relief single.",
       "correct_answer": "False",
       "incorrect_answers": [
-        "True"
+        "True",
+        "Metallica can't play",
+        "Noiseball"
       ]
     },
     {
       "category": "Entertainment: Video Games",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "In &quot;Kingdom Hearts&quot;, what is the name of Sora&#039;s home world?",
+      "question": "In Kingdom Hearts, what is the name of Sora's home world?",
       "correct_answer": "Destiny Islands",
       "incorrect_answers": [
         "Agrabah",
@@ -590,7 +604,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which was the first of Alfred Hitchcock&#039;s movies to be filmed in colour?",
+      "question": "Which was the first of Alfred Hitchcock's movies to be filmed in colour?",
       "correct_answer": "Rope",
       "incorrect_answers": [
         "Psycho",
@@ -602,7 +616,7 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Which actor played the main character in the 1990 film &quot;Edward Scissorhands&quot;?",
+      "question": "Which actor played the main character in the 1990 film Edward Scissorhands?",
       "correct_answer": "Johnny Depp",
       "incorrect_answers": [
         " Clint Eastwood",
@@ -638,7 +652,7 @@
       "category": "Science & Nature",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which gas forms about 78% of the Earth&rsquo;s atmosphere?",
+      "question": "Which gas forms about 78% of the Earth’s atmosphere?",
       "correct_answer": "Nitrogen",
       "incorrect_answers": [
         "Oxygen",
@@ -674,7 +688,7 @@
       "category": "Art",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "What year did Albrecht D&uuml;rer create the painting &quot;The Young Hare&quot;?",
+      "question": "What year did Albrecht Dürer create the painting The Young Hare?",
       "correct_answer": "1502",
       "incorrect_answers": [
         "1702",
@@ -686,17 +700,19 @@
       "category": "Entertainment: Video Games",
       "type": "boolean",
       "difficulty": "hard",
-      "question": "In the game &quot;Melty Blood Actress Again Current Code&quot;, you can enter Blood Heat mode in Half Moon style.",
+      "question": "In the game Melty Blood Actress Again Current Code, you can enter Blood Heat mode in Half Moon style.",
       "correct_answer": "False",
       "incorrect_answers": [
-        "True"
+        "True",
+        "The game is not existing",
+        "It was never developed"
       ]
     },
     {
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What type of animal was Harambe, who was shot after a child fell into it&#039;s enclosure at the Cincinnati Zoo?",
+      "question": "What type of animal was Harambe, who was shot after a child fell into it's enclosure at the Cincinnati Zoo?",
       "correct_answer": "Gorilla",
       "incorrect_answers": [
         "Tiger",
@@ -711,7 +727,9 @@
       "question": "Type 1 diabetes is a result of the liver working improperly.",
       "correct_answer": "False",
       "incorrect_answers": [
-        "True"
+        "True",
+        "Its a terrible affection",
+        "There is no liver"
       ]
     },
     {
@@ -723,7 +741,7 @@
       "incorrect_answers": [
         "American Blessings",
         "50 Saints",
-        "USSR&#039;s Blessings"
+        "USSR's Blessings"
       ]
     },
     {
@@ -733,7 +751,9 @@
       "question": "The United States was a member of the League of Nations.",
       "correct_answer": "False",
       "incorrect_answers": [
-        "True"
+        "True",
+        "Its called UEA",
+        "Its called League of Extrordinary men"
       ]
     },
     {
@@ -777,11 +797,11 @@
       "type": "multiple",
       "difficulty": "medium",
       "question": "In Call of Duty: United Offensive, what two soldiers share a name of a video game character?",
-      "correct_answer": "Gordon &amp; Freeman",
+      "correct_answer": "Gordon & Freeman",
       "incorrect_answers": [
-        "Sam &amp; Fisher",
-        "Nathan &amp; Drake",
-        "Dig &amp; Dug"
+        "Sam & Fisher",
+        "Nathan & Drake",
+        "Dig & Dug"
       ]
     },
     {
@@ -815,14 +835,16 @@
       "question": "St. Louis is the capital of the US State Missouri.",
       "correct_answer": "False",
       "incorrect_answers": [
-        "True"
+        "True",
+        "There is not Missouri",
+        "St. Louis is not a place"
       ]
     },
     {
       "category": "Entertainment: Video Games",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Which of the following games in the Anno series introduced the &quot;Eco Balance&quot; gameplay mechanic?",
+      "question": "Which of the following games in the Anno series introduced the Eco Balance gameplay mechanic?",
       "correct_answer": "Anno 2070",
       "incorrect_answers": [
         "Anno 1404",
@@ -834,7 +856,7 @@
       "category": "Entertainment: Music",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Which song in Drake&#039;s &quot;Views&quot; features Future?",
+      "question": "Which song in Drake's Views features Future?",
       "correct_answer": "Grammys",
       "incorrect_answers": [
         "Too Good",
@@ -846,7 +868,7 @@
       "category": "Entertainment: Music",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "When did The Beatles release the LP &quot;Please Please Me&quot;?",
+      "question": "When did The Beatles release the LP Please Please Me?",
       "correct_answer": "1963",
       "incorrect_answers": [
         "1970",
@@ -882,7 +904,7 @@
       "category": "Entertainment: Television",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is the name of the main character in &quot;The Flash&quot; TV series?",
+      "question": "What is the name of the main character in The Flash TV series?",
       "correct_answer": "Barry Allen",
       "incorrect_answers": [
         "Oliver Queen",
@@ -894,7 +916,7 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Which of the General Mills Corporation&#039;s monster cereals was the last to be released in the 1970&#039;s?",
+      "question": "Which of the General Mills Corporation's monster cereals was the last to be released in the 1970's?",
       "correct_answer": "Fruit Brute",
       "incorrect_answers": [
         "Count Chocula",
@@ -906,8 +928,8 @@
       "category": "Entertainment: Film",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "In the 2012 film, &quot;The Lorax&quot;, who is the antagonist?",
-      "correct_answer": "Aloysius O&#039;Hare",
+      "question": "In the 2012 film, The Lorax, who is the antagonist?",
+      "correct_answer": "Aloysius O'Hare",
       "incorrect_answers": [
         "Ted Wiggins",
         "The Once-Ler",
@@ -918,7 +940,7 @@
       "category": "Entertainment: Video Games",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Which of the following Copy Abilities was only featured in &quot;Kirby &amp; The Amazing Mirror&quot;?",
+      "question": "Which of the following Copy Abilities was only featured in Kirby & The Amazing Mirror?",
       "correct_answer": "Mini",
       "incorrect_answers": [
         "Magic",
@@ -930,7 +952,7 @@
       "category": "Entertainment: Video Games",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "In the Zombies mode of &quot;Call of Duty: Black Ops&quot;, what is the &quot;Pack-A-Punched&quot; version of the &quot;Galil&quot; called?",
+      "question": "In the Zombies mode of Call of Duty: Black Ops, what is the Pack-A-Punched version of the Galil called?",
       "correct_answer": "Lamentation",
       "incorrect_answers": [
         "Galvanized Atomic Lead Insertion Liquidator",
@@ -942,27 +964,31 @@
       "category": "Celebrities",
       "type": "boolean",
       "difficulty": "hard",
-      "question": "Lady Gaga&#039;s real name is Stefani Joanne Angelina Germanotta.",
+      "question": "Lady Gaga's real name is Stefani Joanne Angelina Germanotta.",
       "correct_answer": "True",
       "incorrect_answers": [
-        "False"
+        "False",
+        "She is not real",
+        "She can't sing"
       ]
     },
     {
       "category": "General Knowledge",
       "type": "boolean",
       "difficulty": "medium",
-      "question": "&quot;Santa Claus&quot; is a variety of melon.",
+      "question": "Santa Claus is a variety of melon.",
       "correct_answer": "True",
       "incorrect_answers": [
-        "False"
+        "False",
+        "He is a dwarf",
+        "Speak friend and enter"
       ]
     },
     {
       "category": "Entertainment: Video Games",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "In &quot;Call Of Duty: Zombies&quot;, which map features the &quot;Fly Trap&quot; easter egg?",
+      "question": "In Call Of Duty: Zombies, which map features the Fly Trap easter egg?",
       "correct_answer": "Der Riese",
       "incorrect_answers": [
         "Tranzit",
@@ -1010,7 +1036,7 @@
       "category": "Entertainment: Cartoon & Animations",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Townsend Coleman provided the voice for which turtle in the original 1987 series of &quot;Teenage Mutant Ninja Turtles&quot;?",
+      "question": "Townsend Coleman provided the voice for which turtle in the original 1987 series of Teenage Mutant Ninja Turtles?",
       "correct_answer": "Michelangelo",
       "incorrect_answers": [
         "Leonardo",
@@ -1049,14 +1075,16 @@
       "question": "There are a total of 20 races in Formula One 2016 season.",
       "correct_answer": "False",
       "incorrect_answers": [
-        "True"
+        "True",
+        "There is no race",
+        "Formula One is not a thing"
       ]
     },
     {
       "category": "Celebrities",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "In 2014, this new top 100 rapper who featured in &quot;Computers&quot; and &quot;Body Dance&quot; was arrested in a NYPD sting for murder.",
+      "question": "In 2014, this new top 100 rapper who featured in Computers and Body Dance was arrested in a NYPD sting for murder.",
       "correct_answer": "Bobby Shmurda",
       "incorrect_answers": [
         "DJ Snake",
@@ -1096,7 +1124,7 @@
       "correct_answer": "Daveed Diggs",
       "incorrect_answers": [
         "Lin-Manuel Miranda",
-        "Javier Mu&ntilde;oz",
+        "Javier Muñoz",
         "Wayne Brady"
       ]
     },
@@ -1104,7 +1132,7 @@
       "category": "Entertainment: Musicals & Theatres",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is Jean ValJean&#039;s first prisoner number?",
+      "question": "What is Jean ValJean's first prisoner number?",
       "correct_answer": "24601",
       "incorrect_answers": [
         "9430",
@@ -1128,7 +1156,7 @@
       "category": "Celebrities",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What was James Coburn&#039;s last film role before his death?",
+      "question": "What was James Coburn's last film role before his death?",
       "correct_answer": "American Gun",
       "incorrect_answers": [
         "Monsters Inc",
@@ -1152,7 +1180,7 @@
       "category": "Entertainment: Books",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What was Sir Handel&#039;s original name in &quot;The Railway Series&quot; and it&#039;s animated counterpart &quot;Thomas and Friends?&quot;",
+      "question": "What was Sir Handel's original name in The Railway Series and it's animated counterpart Thomas and Friends?",
       "correct_answer": "Falcon",
       "incorrect_answers": [
         "Eagle",

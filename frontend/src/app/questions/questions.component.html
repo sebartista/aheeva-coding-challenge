@@ -2,7 +2,7 @@
 
   <div class="row">
     <div class="col col-sm-6">
-      <section class="example-section">
+      <section class="quizz-question">
         <form [formGroup]="questionForm" (ngSubmit)="onSubmit()" class="form">
           <div *ngFor="let question of question_data">
             <h3>{{ question.question }}</h3>
@@ -18,7 +18,7 @@
                 {{option.label}}
               </label>
             </div> -->
-            <label *ngFor="let option of question.options">
+            <label *ngFor="let option of question.options" class="quizz-question_label">
               <input
                 formControlName="options"
                 type="radio"
@@ -41,7 +41,7 @@
             </div> -->
 
 
-          <button class="btn btn-primary" [disabled]="!this.questionForm.valid" type="submit" >Submit</button>
+          <button class="btn btn-primary btn-quizz_submit" [disabled]="!this.questionForm.valid" type="submit" >Submit</button>
         </div>
         </form>
 

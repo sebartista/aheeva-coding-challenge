@@ -36,74 +36,58 @@ db.mongoose
     process.exit();
   });
 
-//should empty the database and reload everything.
-// async function mySeeder() {
-//   const data = await MyModel.find({}).limit(1).exec();
-//   if (data.length !== 0) {
-//       // Data exists, no need to seed.
-//       console.log("data exists, continue");
-//       return;
-//   }
-//   //const seed = new MyModel({...});
 
-//   // some other seed logic
-//   // ...
-
-//   //await seed.save();
-// }
 
 async function seedDatabase() {
 
   //if there is no data, drop de collection. (DELETE THIS)
   // db.mongoose.connection.dropCollection("questions", function (err, result) {
   //   console.log("collection Dropped");
-  // }).then(() => {
-    //check if there is data in the database
-    const existing_data = await db.questions.find({}).limit(1).exec();
-    if (existing_data.length !== 0) {
-      // Data exists, no need to seed.
-      console.log("data exists, continue");
-      return;
-    }
+    
+  // }); //end db clean then.
+
+//check if there is data in the database
+const existing_data = await db.questions.find({}).limit(1).exec();
+if (existing_data.length !== 0) {
+  // Data exists, no need to seed.
+  console.log("data exists, continue");
+  return;
+}
 
 
 
-    var id_count = 0; //counter for string id, we will use the _id property for identification, but this is required in the challenge
-    //format json to match object Question
-    var the_questions = mock_data.results.map(function (q) {
-      var options = [];
-      q.incorrect_answers.forEach(function (o) {
-        options.push({
-          label: o,
-          value: o,
-          isCorrect: false
-        });
-      });
-      options.push({
-        label: q.correct_answer,
-        value: q.correct_answer,
-        isCorrect: true,
-      });
-      id_count++; //first insert sum to start from 1.
-      return {
-        id: id_count.toString(),
-        question: q.question,
-        options: options
-      };
+var id_count = 0; //counter for string id, we will use the _id property for identification, but this is required in the challenge
+//format json to match object Question
+var the_questions = mock_data.results.map(function (q) {
+  var options = [];
+  q.incorrect_answers.forEach(function (o) {
+    options.push({
+      label: o,
+      value: o,
+      isCorrect: false
     });
+  });
+  options.push({
+    label: q.correct_answer,
+    value: q.correct_answer,
+    isCorrect: true,
+  });
+  id_count++; //first insert sum to start from 1.
+  return {
+    id: id_count.toString(),
+    question: q.question,
+    options: options
+  };
+});
 
-    db.questions
-      .insertMany(the_questions)
-      .then(function () {
-        console.log("Data inserted"); // Success
-      })
-      .catch(function (error) {
-        console.log(error); // Failure
-      });
-
-  //}); //end db clean then.
-
-
+db.questions
+  .insertMany(the_questions)
+  .then(function () {
+    console.log("Data inserted"); // Success
+  })
+  .catch(function (error) {
+    console.log(error); // Failure
+  });
   
 }
 

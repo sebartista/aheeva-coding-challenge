@@ -1,0 +1,22 @@
+.quizz-question_label{
+  width:100%;
+  background-color:#fff;
+  border-radius: 40px;
+  padding: 20px;
+  color:#777;
+  font-size:24px;
+  cursor: pointer;
+}
+.quizz-question h3{
+  padding-top:10px;
+  padding-bottom:30px;
+  text-align: center;
+}
+.btn-quizz_submit{
+  width:100%;
+  margin-top:30px;
+  background-color:#0dda4c;
+  border-radius: 40px;
+  font-size:24px;
+  text-shadow: 0 0 5px rgba(0,0,0,.4);
+}
