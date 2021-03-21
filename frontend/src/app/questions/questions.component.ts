@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CrudService } from './../service/crud.service';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormBuilder, Validators,FormGroup, FormControl, FormArray } from "@angular/forms";
+import { Question } from '../service/Question';
 
-import { FormBuilder, Validators } from "@angular/forms";
 
 @Component({
   selector: 'app-questions',
@@ -11,33 +11,33 @@ import { FormBuilder, Validators } from "@angular/forms";
 })
 export class QuestionsComponent implements OnInit {
 
-  Question:any = [];
-  selected_answer:any = '';
+  question_data:any = [];
+
+  questionForm: FormGroup;
 
 
-
-
-  constructor(private crudService: CrudService, public fb: FormBuilder) { }
-
-  questionForm = this.fb.group({
-    question_options: ['', [Validators.required]]
-  })
-
-
-  get questionFormElement() {
-    return this.questionForm.get('question_options');
+  constructor(private crudService: CrudService, public fb: FormBuilder) {
+    this.questionForm = this.fb.group({
+      options: ['', [Validators.required]]
+    });
   }
 
+
+
   ngOnInit(): void {
+    this.getQuestion();
+  }
+
+  getQuestion(){
     this.crudService.GetQuestion().subscribe(res=>{
-      console.log(res)
-      this.Question = res;
-    })
+      this.question_data = res;
+    });
   }
 
   onSubmit(): boolean{
    // this.isSubmitted = true;
     if(!this.questionForm.valid) {
+      console.log("form invalid");
       return false;
     } else {
       alert(JSON.stringify(this.questionForm.value));

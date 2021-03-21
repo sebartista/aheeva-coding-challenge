@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatRadioModule } from '@angular/material/radio';
+
 import { ReactiveFormsModule  } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +20,6 @@ import { ReactiveFormsModule  } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatRadioModule,
     ReactiveFormsModule
   ],
   providers: [],

@@ -1,28 +1,58 @@
-<p>questions works!</p>
+<div class="container">
+
+  <div class="row">
+    <div class="col col-sm-6">
+      <section class="example-section">
+        <form [formGroup]="questionForm" (ngSubmit)="onSubmit()" class="form">
+          <div *ngFor="let question of question_data">
+            <h3>{{question.question}}</h3>
+
+            <!-- <div class="form-check" *ngFor="let option of question.options" >
+               <input
+              class="form-check-input"
+              type="radio"
+              name="question_options"
+              formControlName="question_options"
+              [value]="option.id">
+              <label class="form-check-label" for="{{option.id}}">
+                {{option.label}}
+              </label>
+            </div> -->
+            <label *ngFor="let option of question.options">
+              <input
+                formControlName="options"
+                type="radio"
+                name="options"
+                [value]="option._id">
+              {{option.label}}
+            </label>
+
+
+            <!-- <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Default checked radio
+              </label>
+            </div> -->
+
+            <!-- <div class="form-group" *ngFor="let option of question.options">
+              <label for="questionOption">{{option.label}}</label>
+              <input class="form-control" name="question_options" type="radio" formControlName="question_options" [value]="option.id" required>
+            </div> -->
+
+
+          <button class="btn btn-primary" type="submit" >Submit</button>
+        </div>
+        </form>
 
 
 
 
+      </section>
 
-<section class="example-section">
-  <form [formGroup]="questionForm" (ngSubmit)="onSubmit()">
-    <div *ngFor="let question of Question">
-      <p>{{question.question}}</p>
-      <div class="form-group" *ngFor="let option of question.options">
-        <label>{{option.label}}</label>
-        <input type="radio" formControlName="question_options" [value]="option.id" required>
-      </div>
-
-      <!-- <mat-radio-button formControlName="question_options" class="example-radio-button" *ngFor="let option of question.options" [value]="option.id">
-        {{option.value}}
-      </mat-radio-button> -->
-    <!-- </mat-radio-group> -->
-    <button type="submit" >Submit</button>
+    </div>
   </div>
-  </form>
+</div>
 
 
-
-
-</section>
 
