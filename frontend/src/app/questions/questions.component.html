@@ -1,0 +1,28 @@
+<p>questions works!</p>
+
+
+
+
+
+<section class="example-section">
+  <form [formGroup]="questionForm" (ngSubmit)="onSubmit()">
+    <div *ngFor="let question of Question">
+      <p>{{question.question}}</p>
+      <div class="form-group" *ngFor="let option of question.options">
+        <label>{{option.label}}</label>
+        <input type="radio" formControlName="question_options" [value]="option.id" required>
+      </div>
+
+      <!-- <mat-radio-button formControlName="question_options" class="example-radio-button" *ngFor="let option of question.options" [value]="option.id">
+        {{option.value}}
+      </mat-radio-button> -->
+    <!-- </mat-radio-group> -->
+    <button type="submit" >Submit</button>
+  </div>
+  </form>
+
+
+
+
+</section>
+
