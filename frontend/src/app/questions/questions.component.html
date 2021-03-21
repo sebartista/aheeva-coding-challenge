@@ -1,11 +1,11 @@
-<div class="container">
+<div class="container" [hidden]="hide_question">
 
   <div class="row">
     <div class="col col-sm-6">
       <section class="example-section">
         <form [formGroup]="questionForm" (ngSubmit)="onSubmit()" class="form">
           <div *ngFor="let question of question_data">
-            <h3>{{question.question}}</h3>
+            <h3>{{ question.question }}</h3>
 
             <!-- <div class="form-check" *ngFor="let option of question.options" >
                <input
@@ -41,7 +41,7 @@
             </div> -->
 
 
-          <button class="btn btn-primary" type="submit" >Submit</button>
+          <button class="btn btn-primary" [disabled]="!this.questionForm.valid" type="submit" >Submit</button>
         </div>
         </form>
 
@@ -53,6 +53,21 @@
     </div>
   </div>
 </div>
+<div class="container" [hidden]="!user_win">
+  <div class="row">
+    <div class="col text-center">
+      <h2>Excellent</h2>
+      <button class="btn btn-success" (click)="onNextQuestion()">Next Question</button>
+    </div>
+  </div>
 
+</div>
+<div class="container" [hidden]="!user_failed">
+  <div class="row">
+    <div class="col text-center">
+      <h2>You've failed</h2>
+      <button class="btn btn-primary" (click)="onTryAgain()">Try Again</button>
+    </div>
+  </div>
 
-
+</div>

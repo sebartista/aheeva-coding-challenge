@@ -16,8 +16,11 @@ export class CrudService {
 
   constructor(private httpClient: HttpClient) { }
 
-  GetQuestion(){
-    return this.httpClient.get(`${this.REST_API}/question`);
+  GetQuestion(answered_ids:String){
+    return this.httpClient.get(`${this.REST_API}/question?answered=${answered_ids}`);
+  }
+  ValidateAnswer(answer_id:String){
+    return this.httpClient.get(`${this.REST_API}/validate?answer=${answer_id}`);
   }
 
   // Error

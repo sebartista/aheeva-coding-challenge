@@ -12,7 +12,7 @@ module.exports = (mongoose) => {
       { timestamps: true }
     );
   
-    // override __id with id and return the objecto for json calls
+    // //override question with unescaped and return the objecto for json calls
     // schema.method("toJSON", function () {
     //   const { __v, _id, ...object } = this.toObject();
     //   object.id = _id;

@@ -16,7 +16,9 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 // parse requests of content-type - application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 const db = require("./models");
 db.mongoose
@@ -51,30 +53,43 @@ db.mongoose
 // }
 
 async function seedDatabase() {
-  //check if there is data in the database
-  const existing_data = await db.questions.find({}).limit(1).exec();
-  if (existing_data.length !== 0) {
-    // Data exists, no need to seed.
-    console.log("data exists, continue");
-    return;
-  }
+
   //if there is no data, drop de collection. (DELETE THIS)
   // db.mongoose.connection.dropCollection("questions", function (err, result) {
   //   console.log("collection Dropped");
+  // }).then(() => {
+    //check if there is data in the database
+    const existing_data = await db.questions.find({}).limit(1).exec();
+    if (existing_data.length !== 0) {
+      // Data exists, no need to seed.
+      console.log("data exists, continue");
+      return;
+    }
 
+
+
+    var id_count = 0; //counter for string id, we will use the _id property for identification, but this is required in the challenge
     //format json to match object Question
     var the_questions = mock_data.results.map(function (q) {
       var options = [];
       q.incorrect_answers.forEach(function (o) {
-        options.push({ label: o, value: o, isCorrect: false });
+        options.push({
+          label: o,
+          value: o,
+          isCorrect: false
+        });
       });
       options.push({
         label: q.correct_answer,
         value: q.correct_answer,
         isCorrect: true,
       });
-
-      return { question: q.question, options: options };
+      id_count++; //first insert sum to start from 1.
+      return {
+        id: id_count.toString(),
+        question: q.question,
+        options: options
+      };
     });
 
     db.questions
@@ -85,12 +100,18 @@ async function seedDatabase() {
       .catch(function (error) {
         console.log(error); // Failure
       });
-  //});
+
+  //}); //end db clean then.
+
+
+  
 }
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "We are at home." });
+  res.json({
+    message: "We are at home."
+  });
 });
 
 require("./routes/question.routes")(app);

@@ -52,11 +52,19 @@ exports.getQuestion = (req, res) => {
     //TODO:: filter set of ids already answered
 
     //TODO:: populate answered questions array for comparing and retrieving not answered questions
-    const answered = [];
-    Question.find({}).where('id').nin(answered).limit(1).then(data=>{
+    var answered = [];
+    console.log(answered);
+    if(req.query.answered){
+      answered = req.query.answered.split(',');
+    }
+    console.log(answered);
+    Question.find({}).where('_id').nin(answered).limit(1).then(data=>{
         if (!data){
             res.status(404).send({ message: "We do not have questions" });
-        } else res.send(data);
+        } else{
+          console.log(data[0].question);
+          res.send(data);
+        } 
     }).catch(err=> {
         // this is not ok, it should degrade gracefully
         res.status(500).send({
@@ -71,7 +79,7 @@ exports.getQuestion = (req, res) => {
 exports.validateQuestion = (req, res) => {
     
     const answer = req.query.answer;
-
+    
     //should find by id, compare with option value and return
 
     Question.find({"options._id": answer})
@@ -79,10 +87,14 @@ exports.validateQuestion = (req, res) => {
         if (!data)
           res.status(404).send({ message: "Not found Question with id " + id });
         else {
-            // TODO:: get the answer from the array and return isCorrect     
-            console.log(data[0]);
-            let found_answer = data[0].options.find(a => a._id = answer);
-            console.log(found_answer.isCorrect);
+            // TODO:: get the answer from the array and return isCorrect
+            //not proud of this.
+            var found_answer;            
+            data[0].options.forEach((option, index)=>{
+              if(option._id.toString() === answer){                
+                found_answer = data[0].options[index];
+              }
+            });
             res.send(found_answer.isCorrect);
         }
       })
