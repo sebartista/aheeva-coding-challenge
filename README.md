@@ -2,11 +2,13 @@
 This is an implementation of the Aheeva Coding Challenge App
 
 ### Requirements
->MongoDB installed
+> MongoDB installed
 
->Nodejs 12+
+> Nodejs 12+
 
->Angular 11 cli
+> Mongoose
+
+> Angular 11 cli
 
 > Angular must run on port 4200
 
@@ -29,14 +31,14 @@ This is an implementation of the Aheeva Coding Challenge App
 
 ## Quiz App Infrastructure
 
-The app implementation has 2 main components, the backend and the fronend
+The app implementation has 2 main components, the backend and the frontend
 
-The backend handles the server and Mongodb connection.
+The backend handles the server, request routes and Mongodb connection.
 
-The ORM is handled with Expressjs, as well as the requests.
+The ORM is handled by Expressjs.
 
 The frontend uses Angular 11
-The question component handles all the logic
+The question component handles all the logic of the questions.
 
 #### TODO:
 Fix 2 node_modules folders.
