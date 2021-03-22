@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule  } from '@angular/forms';
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
+import { ScoreComponent } from './score/score.component';
 
 export function playerFactory() {
   return player;
@@ -19,7 +20,8 @@ export function playerFactory() {
 @NgModule({
   declarations: [
     AppComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    ScoreComponent
   ],
   imports: [
     BrowserModule,

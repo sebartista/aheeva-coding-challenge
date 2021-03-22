@@ -69,6 +69,8 @@ export class QuestionsComponent implements OnInit {
     path: '/assets/50486-rocket.json',
   };
 
+  player_score:number = 0;
+
   constructor(private crudService: CrudService, public fb: FormBuilder) {
     //bulid the form in the constructor
     this.questionForm = this.fb.group({
@@ -96,6 +98,7 @@ export class QuestionsComponent implements OnInit {
         this.isFailShown = false;
         // store answered question
         this.answered_questions_ids.push(this.question_data[0]._id.toString());
+        this.player_score += 1000;
       } else {
         //handle view state invalid answer
         this.isWinShown = false;
@@ -147,6 +150,7 @@ export class QuestionsComponent implements OnInit {
   onTryAgain() {
 
     this.answered_questions_ids = []; //reset answered ids
+    this.player_score = 0;
     this.crudService
         .GetQuestion("")
         .subscribe((res) => { //using crud service callback to wait data for ui update

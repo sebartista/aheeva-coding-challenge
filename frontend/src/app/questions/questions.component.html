@@ -1,8 +1,10 @@
 <!-- <div class="container" [hidden]="hide_question"> -->
 <!-- <div class="container" [@openClose]="isOpen ? 'open': 'closed'"> -->
+<app-score [player_score]="player_score"></app-score>
 <div class="container quizz-question_container" @myInsertRemoveTrigger *ngIf="isQuestionShown"
   (@myInsertRemoveTrigger.start)="onAnimationEvent($event)" (@myInsertRemoveTrigger.done)="onAnimationEvent($event)" [hidden]="!isQuestionShown">
   <div class="row">
+    <div class="col-sm-3"></div>
     <div class="col col-sm-6">
       <section class="quizz-question">
         <form [formGroup]="questionForm" (ngSubmit)="onSubmit()" class="form">

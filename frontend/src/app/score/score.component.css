@@ -1,0 +1,7 @@
+.quizz-score-container span{
+  font-size:24px;
+  text-shadow: 0 0 2px rgba(0,0,0,.5);
+}
+.quizz-score-container img{
+  margin-top:-5px;
+}
