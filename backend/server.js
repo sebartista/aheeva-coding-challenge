@@ -40,12 +40,6 @@ db.mongoose
 
 async function seedDatabase() {
 
-  //if there is no data, drop de collection. (DELETE THIS)
-  // db.mongoose.connection.dropCollection("questions", function (err, result) {
-  //   console.log("collection Dropped");
-    
-  // }); //end db clean then.
-
 //check if there is data in the database
 const existing_data = await db.questions.find({}).limit(1).exec();
 if (existing_data.length !== 0) {
@@ -55,7 +49,7 @@ if (existing_data.length !== 0) {
 }
 
 
-
+//If there's is no data, seed the database
 var id_count = 0; //counter for string id, we will use the _id property for identification, but this is required in the challenge
 //format json to match object Question
 var the_questions = mock_data.results.map(function (q) {

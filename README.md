@@ -8,6 +8,10 @@ This is an implementation of the Aheeva Coding Challenge App
 
 >Angular 11 cli
 
+> Angular must run on port 4200
+
+> Node uses port 8180
+
 ### Installation
 > Clone the repository
 
