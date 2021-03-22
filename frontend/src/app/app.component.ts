@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Aheeva Coding Challenge';
+
+  player_score = 0;
+
 }

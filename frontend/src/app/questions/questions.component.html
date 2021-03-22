@@ -1,58 +1,73 @@
 <!-- <div class="container" [hidden]="hide_question"> -->
-  <!-- <div class="container" [@openClose]="isOpen ? 'open': 'closed'"> -->
-  <div class="container quizz-question_container" @myInsertRemoveTrigger *ngIf="isQuestionShown" (@myInsertRemoveTrigger.start)="onAnimationEvent($event)" (@myInsertRemoveTrigger.done)="onAnimationEvent($event)">
+<!-- <div class="container" [@openClose]="isOpen ? 'open': 'closed'"> -->
+<div class="container quizz-question_container" @myInsertRemoveTrigger *ngIf="isQuestionShown"
+  (@myInsertRemoveTrigger.start)="onAnimationEvent($event)" (@myInsertRemoveTrigger.done)="onAnimationEvent($event)" [hidden]="!isQuestionShown">
   <div class="row">
     <div class="col col-sm-6">
       <section class="quizz-question">
         <form [formGroup]="questionForm" (ngSubmit)="onSubmit()" class="form">
           <div *ngFor="let question of question_data" @pageAnimations>
             <h3>{{ question.question }}</h3>
-
-
             <label *ngFor="let option of question.options" class="quizz-question_label">
-              <input
-                formControlName="options"
-                type="radio"
-                name="options"
-                [value]="option._id">
+              <input formControlName="options" type="radio" name="options" [value]="option._id">
               {{option.label}}
             </label>
-
-
-
-          <button class="btn btn-primary btn-quizz_submit" [disabled]="!this.questionForm.valid" type="submit" >Submit</button>
-        </div>
+            <button class="btn btn-primary btn-quizz_submit" [disabled]="!this.questionForm.valid"
+              type="submit">Submit</button>
+          </div>
         </form>
-
-
-
-
       </section>
 
     </div>
   </div>
 </div>
 <div class="quizz_win pt-5 pb-5">
-
-
-<div class="container" @myInsertRemoveTrigger *ngIf="isWinShown" >
-  <div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col col-sm-6 text-center">
-      <ng-lottie width="200" [options]="lottie_options" (animationCreated)="animationCreated($event)"></ng-lottie>
-      <h2>Excellent</h2>
-      <button class="btn btn-success" (click)="onNextQuestion()">Next Question</button>
+  <div class="container" @myInsertRemoveTrigger *ngIf="isWinShown" [hidden]="!isWinShown">
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col col-sm-4 text-center">
+        <ng-lottie width="200" [options]="lottie_options" (animationCreated)="animationCreated($event)"></ng-lottie>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6 text-center">
+        <h2>Excellent</h2>
+        <button class="btn btn-success" (click)="onNextQuestion()">Next Question</button>
+      </div>
     </div>
   </div>
-
 </div>
-</div>
-<div class="container" @myInsertRemoveTrigger *ngIf="isFailShown" >
-  <div class="row">
-    <div class="col col-sm-6 text-center">
-      <h2>You've failed</h2>
-      <button class="btn btn-primary" (click)="onTryAgain()">Try Again</button>
+<div class="quizz_fail pt-5 pb-5">
+  <div class="container" @myInsertRemoveTrigger *ngIf="isFailShown" [hidden]="!isFailShown">
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col col-sm-6 text-center">
+        <h2>Your answer is incorrect</h2>
+        <br>
+        <button class="btn btn-primary btn-quizz_submit" (click)="onTryAgain()">Try Again</button>
+      </div>
     </div>
-  </div>
 
+  </div>
+</div>
+
+
+<div class="quizz_end pt-5 pb-5" @myInsertRemoveTrigger *ngIf="isEndGame" [hidden]="!isEndGame">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col col-sm-4 text-center">
+        <ng-lottie [options]="lottie_options" (animationCreated)="animationCreated($event)"></ng-lottie>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h2>Congratulations</h2>
+        <h3>You have completed the quizz</h3>
+      </div>
+    </div>
+
+  </div>
 </div>

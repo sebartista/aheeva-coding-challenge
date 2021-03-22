@@ -23,8 +23,10 @@
 .quizz-question_container{
   height: 100vh;
 }
-.quizz_win{
+/* .quizz_win,
+.quizz_end,
+.quizz_fail{
   position: absolute;
   width: 100%;
   height: 100%;
-}
+} */
